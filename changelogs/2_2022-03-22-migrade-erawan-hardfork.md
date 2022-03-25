@@ -55,7 +55,7 @@ cp /bkc-node/mainnet/data/geth/nodekey /bkc-node/mainnet/validator.key
 ```
 
 8. Edit `/etc/systemd/system/geth.service`
-```
+```toml
 [Unit]
 Description=Geth Validator
 After=network.target auditd.service
@@ -77,7 +77,7 @@ WantedBy=default.target
 RequiredBy=swarm.service
 Alias=geth.service
 ```
-Replace `<<Your account address>>` and `<<Reward pool address>>` form [Sheet](https://docs.google.com/spreadsheets/d/1QPSP8GYxQJJSaSkdT6H1tXft-_CGFsz7RzFDWmJbX98/edit#gid=1196957597) 
+> Replace `<<Your account address>>` and `<<Reward pool address>>` form [Sheet](https://docs.google.com/spreadsheets/d/1QPSP8GYxQJJSaSkdT6H1tXft-_CGFsz7RzFDWmJbX98/edit#gid=1196957597) 
 
 
 9. SystemD reload service and Start `geth.service`
