@@ -12,7 +12,6 @@ TrieCleanCacheJournal = "triecache"
 TrieCleanCacheRejournal = 3600000000000
 TrieDirtyCache = 256
 TrieTimeout = 3600000000000
-SnapshotCache = 0
 EnablePreimageRecording = false
 EWASMInterpreter = ""
 EVMInterpreter = ""
